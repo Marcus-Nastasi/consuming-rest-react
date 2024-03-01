@@ -1,2 +1,2 @@
-Consuming restfullAPI with TSX.
+Consuming restfulAPI with TSX.
 

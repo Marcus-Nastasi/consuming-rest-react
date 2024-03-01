@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Todo from './components/Todo';
 
-function App() {
+export default function App() {
    const [ todos, setTodos ] = useState([]);
 
    useEffect(() => {
@@ -48,13 +48,13 @@ function App() {
 
                <div className='flex flex-col-reverse items-center justify-between w-full rounded-lg px-2 mb-8'>
 
-               {todos.map(todo => {
-                  return(
-                     <>
-                        <Todo todo={todo} />
-                     </>
-                  );
-               })}
+                  {todos.map(todo => {
+                     return(
+                        <>
+                           <Todo todo={todo} />
+                        </>
+                     );
+                  })}
 
                </div>
 
@@ -65,8 +65,6 @@ function App() {
    </>
   );
 };
-
-export default App;
 
 
 
